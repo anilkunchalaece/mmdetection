@@ -244,7 +244,19 @@ def show_result_pyplot(model,
     """
     if hasattr(model, 'module'):
         model = model.module
-    model.show_result(
+    # model.show_result(
+    #     img,
+    #     result,
+    #     score_thr=score_thr,
+    #     show=True,
+    #     wait_time=wait_time,
+    #     win_name=title,
+    #     bbox_color=palette,
+    #     text_color=(200, 200, 200),
+    #     mask_color=palette,
+    #     out_file=out_file)
+    
+    model.show_masks(
         img,
         result,
         score_thr=score_thr,
@@ -254,4 +266,5 @@ def show_result_pyplot(model,
         bbox_color=palette,
         text_color=(200, 200, 200),
         mask_color=palette,
-        out_file=out_file)
+        out_file=out_file        
+    )
