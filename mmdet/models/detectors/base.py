@@ -423,7 +423,7 @@ class BaseDetector(BaseModule, metaclass=ABCMeta):
         if out_file is not None:
             show = False
         
-        print("#### draw bboxes ####")
+        # print("#### draw bboxes ####")
         # draw bounding boxes
         img = imshow_masks(
             img,
